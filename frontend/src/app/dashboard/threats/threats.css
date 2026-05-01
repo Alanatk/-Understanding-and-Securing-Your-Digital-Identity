@@ -1,0 +1,134 @@
+.threats-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.threats-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+.threats-sidebar {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.threat-nav-btn {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--foreground);
+  font-weight: 500;
+}
+
+.threat-nav-btn:hover {
+  background-color: var(--background);
+  border-color: var(--primary);
+}
+
+.threat-nav-btn.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.threat-icon {
+  font-size: 1.25rem;
+}
+
+.threats-content {
+  flex: 1;
+}
+
+.threat-detail-card {
+  border-top: 4px solid #ef4444; /* Red for threats */
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+.detail-header h2 {
+  margin: 0;
+}
+
+.big-icon {
+  font-size: 3rem;
+}
+
+.detail-section {
+  margin-bottom: 1.5rem;
+}
+
+.detail-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-box {
+  background-color: rgba(239, 68, 68, 0.05);
+  border-left: 4px solid #ef4444;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.prevention-list {
+  padding-left: 1.5rem;
+}
+
+.prevention-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.engine-card {
+  background: linear-gradient(to right, var(--surface), rgba(139, 92, 246, 0.05));
+  border-left: 4px solid #8b5cf6; /* purple for AI/Recommendations */
+}
+
+.engine-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.engine-header h3 { margin: 0; }
+
+.badge-ai {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+.rec-engine-list {
+  padding-left: 1.5rem;
+}
+
+.rec-engine-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .threats-layout {
+    flex-direction: column;
+  }
+  
+  .threats-sidebar {
+    width: 100%;
+  }
+}

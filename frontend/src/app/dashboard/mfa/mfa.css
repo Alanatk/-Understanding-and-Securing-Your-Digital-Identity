@@ -1,0 +1,94 @@
+.mfa-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mfa-header {
+  margin-bottom: 2rem;
+}
+
+.mfa-info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.method-card {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.method-card:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  transform: translateY(-2px);
+}
+
+.method-card.active {
+  border-color: var(--primary);
+  background-color: rgba(59, 130, 246, 0.05);
+}
+
+.method-card h3 {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.simulation-card {
+  border-top: 4px solid var(--primary);
+  min-height: 300px;
+}
+
+.mock-qr-code {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: #333;
+  font-weight: bold;
+  background-image: repeating-linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc), repeating-linear-gradient(45deg, #ccc 25%, white 25%, white 75%, #ccc 75%, #ccc);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+}
+
+.verify-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.code-input {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: var(--font-mono), monospace;
+}
+
+.hint {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
+
+.success-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}

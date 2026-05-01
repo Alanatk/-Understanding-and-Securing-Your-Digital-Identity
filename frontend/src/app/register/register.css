@@ -1,0 +1,4 @@
+import '../login/login.css'; // Reuse login styles
+
+// In register page we already imported this implicitly or we can just let globals handle it if we make it part of globals, 
+// actually I'll just change the register page to import the login.css

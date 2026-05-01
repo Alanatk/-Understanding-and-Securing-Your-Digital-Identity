@@ -1,0 +1,139 @@
+.footprint-scanner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.scanner-header {
+  margin-bottom: 2rem;
+}
+
+.scan-card {
+  margin-bottom: 2rem;
+}
+
+.scan-card label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.input-group-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.scan-input {
+  margin-bottom: 0;
+}
+
+.scanning-animation {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.radar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  margin: 0 auto 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.radar::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(45deg, transparent 0%, rgba(59, 130, 246, 0.5) 100%);
+  transform-origin: 0 0;
+  animation: radar-spin 2s linear infinite;
+}
+
+@keyframes radar-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.result-summary {
+  margin-bottom: 2rem;
+  border-top-width: 4px;
+}
+
+.risk-low { border-top-color: #10b981; }
+.risk-low .risk-text { color: #10b981; }
+
+.risk-medium { border-top-color: #f59e0b; }
+.risk-medium .risk-text { color: #f59e0b; }
+
+.risk-high { border-top-color: #ef4444; }
+.risk-high .risk-text { color: #ef4444; }
+
+.summary-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat .label {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+.stat .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.breaches-list h3 {
+  margin-bottom: 1rem;
+}
+
+.breach-card {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+}
+
+.breach-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.breach-header h4 {
+  margin: 0;
+  color: #ef4444;
+}
+
+.breach-header .date {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.safe-card {
+  text-align: center;
+  border-top: 4px solid #10b981;
+}
+
+.safe-card h3 {
+  color: #10b981;
+}
+
+.rec-list {
+  padding-left: 1.5rem;
+}
+
+.rec-list li {
+  margin-bottom: 0.5rem;
+}
